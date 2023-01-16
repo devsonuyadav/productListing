@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Link } from "react-router-dom";
 import { Products } from "../redux/types";
 
 export interface ProductProps {
@@ -16,7 +17,7 @@ const ProductCard = ({ data }: any) => {
   }: Products = data;
 
   return (
-    <div className="card" key={id}>
+    <Link to="/product" state={data} className="card" key={id}>
       <figure>
         <img src={coverUrl} alt={name} />
       </figure>
@@ -25,7 +26,7 @@ const ProductCard = ({ data }: any) => {
       <div>Place: {place}</div>
       <div>Type: {type}</div>
       <div>Price: {price}</div>
-    </div>
+    </Link>
   );
 };
 

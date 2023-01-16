@@ -120,6 +120,23 @@
 }
 
 
+.details {
+    margin: 5% 15% 5% 15%;
+    background-color:#ecf0f1 ;
+    padding : 5%;
+    border-radius: 20px;
+}
+
+
+.meeting {
+    display: flex;
+    flex-direction: row;
+   
+    flex-wrap: wrap;
+    align-self: center;
+    
+    justify-content: space-evenly;
+}
 .animatedLoader {
     border: 10px solid #f3f3f3; /* Light grey */
     border-top: 10px solid #f39c12;; /* Blue */
